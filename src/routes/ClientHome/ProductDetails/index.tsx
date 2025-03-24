@@ -1,9 +1,8 @@
 import './styles.css'
-import HeaderClientnt from '../../components/HeaderClient';
-import ProductDetailsCard from '../../components/ProductDetailsCard';
-import ButtonPrimarymary from '../../components/ButtonPrimary';
-import ButtonInverseerse from '../../components/ButtonInverse'
-import { ProductDTO } from '../../models/product';
+import ProductDetailsCard from '../../../components/ProductDetailsCard';
+import ButtonPrimarymary from '../../../components/ButtonPrimary';
+import ButtonInverseerse from '../../../components/ButtonInverse'
+import { ProductDTO } from '../../../models/product';
 
 const product: ProductDTO ={
   id:2,
@@ -25,7 +24,6 @@ export default function ProductDetails(){
 
     return(
            <>
-            <HeaderClientnt/>
             <main>
               <section id="product-details-section" className="dsc-container">
                 <ProductDetailsCard product={product}/>
